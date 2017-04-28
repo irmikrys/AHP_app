@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AHPapp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AHPapp_jar</output-path>
+    <root id="archive" name="AHPapp.jar">
+      <element id="module-output" name="AHPapp" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/commons-lang3-3.5/commons-lang3-3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/Jama-1.0.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
