@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.GUIMenuController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="New Problem">
+                    <font>
+                        <Font name="Apple Chancery" size="36.0" />
+                    </font></Label>
+            </children>
+        </HBox>
+    </top>
+    <bottom>
+        <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="newBackMenu" mnemonicParsing="false" onAction="#backToMainMenu" text="&lt; Menu" />
+                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                <Button fx:id="btnCreateProblem" mnemonicParsing="false" onAction="#newProblem" text="Create &gt;" />
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </bottom>
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Problem: " />
+                        <TextField fx:id="fldProblemName" promptText="Enter name..." />
+                    </children>
+                </HBox>
+                <Label fx:id="lblNewProblem" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

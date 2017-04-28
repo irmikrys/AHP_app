@@ -1,0 +1,275 @@
+.root{
+    -fx-background-color: brown;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-font-family: "Helvetica";
+}
+
+.label {
+    -fx-text-fill: burlywood;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: brown;
+}
+
+.text-field {
+    -fx-background-color: #f6ebbe;
+    -fx-border-color: brown;
+    -fx-border-radius: 10px;
+    -fx-background-radius : 10px;
+    -fx-prompt-text-fill: #7c4344;
+}
+.text-field-with-margin {
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.radio-button {
+    -fx-text-fill: burlywood;
+}
+
+.choice-box, .combo-box {
+    -fx-background-color:
+            rgba(0,0,0,0.05),
+            linear-gradient(#dcca8a, #c7a740),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-radius: 10px;
+}
+.choice-box .label, .combo-box .label {
+    -fx-text-fill: #311c09;
+}
+
+
+.tree-view {
+    -fx-background-color: #f6ebbe;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+.tree-view .tree-cell{
+    -fx-background-color: #f6ebbe;
+    -fx-text-fill: #311c09;
+    -fx-font-weight: BOLD;
+}
+
+.tree-view .tree-cell:hover{
+    -fx-background-color: #f6ebbe;
+    -fx-text-fill: #120906;
+    -fx-font-weight: BOLD;
+}
+
+.tree-view .tree-cell:selected{
+    -fx-background-color: #f6ebbe;
+    -fx-text-fill: #120906;
+    -fx-font-weight: BOLD;
+}
+
+.list-view {
+    -fx-background-color: burlywood, #f6ebbe;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+.list-view .list-cell:even {
+    -fx-padding: 4 0 4 5;
+    -fx-background-color: #debe78;
+}
+.list-view .list-cell:odd {
+    -fx-padding: 4 0 4 5;
+    -fx-background-color: #f6ebbe;
+}
+.list-view .list-cell:filled:selected, .list-view .list-cell:filled:selected:hover {
+    -fx-background-color:
+            rgba(0,0,0,0.05),
+            linear-gradient(#b4956b, #cec39c);
+    -fx-text-fill: -fx-selection-bar-text;
+}
+.list-view .list-cell:even:filled:hover {
+    -fx-background-color:
+            rgba(0,0,0,0.05),
+            linear-gradient(burlywood, #f6ebbe);
+    -fx-background-radius: 50;
+    -fx-text-fill: -fx-text-inner-color;
+}
+.list-view .list-cell:odd:filled:hover {
+    -fx-background-color:
+            rgba(0,0,0,0.05),
+            linear-gradient(#cdac47, #f6ebbe);
+    -fx-background-radius: 50;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.menu-bar {
+    -fx-background-color:
+            rgba(0,0,0,0.05),
+            linear-gradient(brown, #812413),
+            linear-gradient(#bf2e13 0%, brown 20%, #912614 80%, #912614 100%),
+            linear-gradient(brown, #912614);
+    -fx-background-insets: 0,4 4 3 4,4,5,6;
+    -fx-background-radius: 50;
+    -fx-padding: 7 20 7 20;
+}
+.menu-bar .menu {
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#dcca8a, #c7a740),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,4 4 3 4,4,5,6;
+    -fx-background-radius: 50;
+    -fx-padding: 7 20 7 20;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 13px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+.menu-bar .menu .label {
+    -fx-text-fill: #311c09;
+}
+.menu-bar .menu:hover {
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#c7a740, #dcca8a),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#e6c34d,#f6ebbe);
+    -fx-background-insets: 0,4 4 3 4,4,5,6;
+    -fx-background-radius: 50;
+    -fx-padding: 7 20 7 20;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 13px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+
+.menu-item {
+    -fx-background-color:
+            #2a2927,
+            rgba(0,0,0,0.05),
+            linear-gradient(#c7a740, #dcca8a),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#f6ebbe,#e6c34d);
+    -fx-background-radius: 9px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+.menu-item:focused {
+    -fx-background-color:
+            #2a2927,
+            rgba(0,0,0,0.05),
+            linear-gradient(#c7a740, #dcca8a),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#e6c34d, #f6ebbe);
+    -fx-background-radius: 9px;
+}
+.menu-item:hover {
+    -fx-background-color:
+            #32312f,
+            rgba(0,0,0,0.05),
+            linear-gradient(#c7a740, #dcca8a),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#e6c34d, #f6ebbe);
+    -fx-background-radius: 9px;
+}
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: burlywood;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 10px; /*nie dziala*/
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+}
+
+.button {
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#dcca8a, #c7a740),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,4 4 3 4,4,5,6;
+    -fx-background-radius: 50;
+    -fx-padding: 7 20 7 20;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 13px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+.button:hover {
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#c7a740, #dcca8a),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#e6c34d, #f6ebbe);
+}
+.button:pressed {
+    -fx-padding: 8 21 8 21;
+    -fx-background-insets: 0,5 5 4 5,5,6,7;
+}
+.button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.5) , 0, 0.0 , 0 , 1);
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+.tab-pane {
+    -fx-tab-min-width:90px;
+    -fx-background-color: #f6ebbe;
+}
+.tab-pane .label {
+    -fx-text-fill: brown;
+}
+.tab{
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#dcca8a, #c7a740),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,4 4 3 4,4,5,6;
+    -fx-background-radius: 50;
+    -fx-padding: 7 20 7 20;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 13px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+.tab-pane .tab {
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#dcca8a, #c7a740),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,4 4 3 4,4,5,6;
+    -fx-background-radius: 50;
+    -fx-padding: 7 20 7 20;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 13px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+
+}
+.tab-pane .tab:selected {
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#c7a740, #dcca8a),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#e6c34d, #f6ebbe);
+}
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #311c09;
+}
+

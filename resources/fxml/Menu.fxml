@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.GUIMenuController">
+    <bottom>
+        <Label fx:id="lblMenuStart" alignment="CENTER" contentDisplay="CENTER" wrapText="true" BorderPane.alignment="CENTER" />
+    </bottom>
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Analytic Hierarchy Process">
+                    <font>
+                        <Font name="Apple Chancery" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btnNew" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#createProblem" text="Create New Problem" wrapText="true">
+                    <tooltip>
+                        <Tooltip text="Click to create your new file..." />
+                    </tooltip>
+                </Button>
+                <Button fx:id="btnProp" mnemonicParsing="false" onAction="#gotoProp" text="Properties" wrapText="true" />
+                <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exit" text="Exit">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
